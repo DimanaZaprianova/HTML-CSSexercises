@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simpleFormControls</title>
+</head>
+
+<body>
+
+    <form action="/test" method="post">
+        <fieldset>
+            <h1>Регистрация</h1>
+            <fieldset>
+
+                <legend>Лични данни:</legend>
+                <label for="fname">Име:</label>
+                <input type="text" id="fname" name="fname" placeholder="малко име на латиница"><br><br>
+                <label for="lname">Име:</label>
+                <input type="text" id="lname" name="lname" placeholder="фамилия на латиница"><br><br>
+                <label>Пол: </label>
+                <label>мъж: <input type="radio" name="gender" value="male"></label>
+                <label>жена: <input type="radio" name="gender" value="female"></label><br><br>
+
+            </fieldset><br><br>
+
+            <label for="textField">Коментар:</label><br><br>
+            <textarea id="textField" name="textField" rows="4" cols="50" placeholder="напишете ни нещо"></textarea><br><br>
+            <button type="submit">Изпрати</button>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

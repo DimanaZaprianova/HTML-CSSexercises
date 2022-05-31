@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="registration.py" method="POST">
+        <div>Име: <input type="text" name="uname"></div>
+        <div>Парола: <input type="password" name="pass"></div>
+        <button type="submit">Submit</button><br><br>
+<!-- Text type: <input type="text">
+Pass type: <input type="password">
+Checkbox: <input type="checkbox">
+Radio: <input type="radio">
+File: <input type="file">
+Color: <input type="color">
+Submit button: <input type="submit">
+Reset button: <input type="reset"> -->
+    </form>
+    <form action="/action_page.php" method="get">
+        <input type="checkbox" name="vehicle1" value="Bike">
+        <label for="vehicle1"> I have a bike</label><br>
+        <input type="checkbox" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+        <input type="checkbox" name="vehicle3" value="Boat" checked>
+        <label for="vehicle3"> I have a boat</label><br><br>
+        <input type="submit" value="Submit">
+      </form>
+      <form action="/action_page.php">
+        <label for="phone">Enter a phone number:</label><br><br>
+        <input type="tel" id="phone" name="phone" placeholder="123-45-678"
+        pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"><br><br>
+        <small>Format: 123-45-678</small><br><br>
+        <input type="submit">
+      </form> 
+      
+      <!-- An HTML form with a read-only input field: -->
+      <form action="/action_page.php">
+        <label for="country">Country:</label>
+        <input type="text" id="country" name="country" value="Norway" readonly><br><br>
+        <input type="submit" value="Submit">
+      </form>
+
+      <!-- An HTML form with a required input field: -->
+      <form action="/action_page.php">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <input type="submit">
+      </form>
+      
+      <!-- An HTML form with two input fields with a width of 50 and 4 characters: -->
+      <form action="/action_page.php">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" size="50"><br><br>
+        <label for="pin">PIN:</label>
+        <input type="text" id="pin" name="pin" maxlength="4" size="4"><br><br>
+        <input type="submit" value="Submit">
+      </form>
+
+      <!-- An HTML form with initial (default) values: -->
+      <form action="/action_page.php">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname" value="John"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+        <input type="submit" value="Submit">
+      </form>
+
+      <form action="/test" method="get">
+        <fieldset>
+          <legend>Gender</legend>
+          <label>male: <input type="radio" name="gender" value="male"></label>
+          <label>female: <input type="radio" name="gender" value="female"></label>
+          <label>other: <input type="radio" name="gender" value="other"></label>
+        </fieldset>
+      
+        <input type="submit" name="">
+      </form>
+
+        <input type="submit" name="" value="Изпрати">
+        <input type="reset" name="" value="Изчисти">
+        <input type="бутон" name="" value="Click me"><br><br> 
+
+        <!-- бутон, за изпращане на формата: -->
+        <button type="submit">Изпрати</button>
+
+        <!-- бутон, за изчистване на полетата: -->
+        <button type="reset">Изчисти</button>
+
+        <!-- бутон, без дефинирана функционалност - използва се с JavaScript: -->
+        <button type="button">Click me</button>
+
+        <form action="/action_page.php">
+              <input type="radio" id="html" name="fav_language" value="HTML">
+              <label for="html">HTML</label><br>
+              <input type="radio" id="css" name="fav_language" value="CSS">
+              <label for="css">CSS</label><br>
+              <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+              <label for="javascript">JavaScript</label><br><br>
+              <input type="submit" value="Submit"><br><br>
+        </form>
+        <!-- The <fieldset> tag is used to group related elements in a form.
+            The <fieldset> tag draws a box around the related elements. 
+            The <legend> tag is used to define a caption for the <fieldset> element.-->
+                <form action="/action_page.php">
+                    <fieldset>
+                      <legend>Personalia:</legend>
+                      <label for="fname">First name:</label>
+                      <input type="text" id="fname" name="fname"><br><br>
+                      <label for="lname">Last name:</label>
+                      <input type="text" id="lname" name="lname"><br><br>
+                      <label for="email">Email:</label>
+                      <input type="email" id="email" name="email"><br><br>
+                      <label for="birthday">Birthday:</label>
+                      <input type="date" id="birthday" name="birthday"><br><br>
+                      <input type="submit" value="Submit"><br><br>
+                    </fieldset>
+                  </form>
+    <!-- select tag; option tag -->
+    <!-- Create a drop-down list with four options: -->
+<label for="cars">Choose a car:</label>
+<select name="cars" id="cars">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="mercedes">Mercedes</option>
+  <option value="audi">Audi</option><br><br>
+</select>
+<br><br>
+<!-- Group related options with <optgroup> tags: 
+The <optgroup> tag is used to group related 
+options in a <select> element (drop-down list).
+If you have a long list of options, groups of related 
+options are easier to handle for a user.-->
+
+    <label for="cars">Choose a car:</label>
+    <select  name="cars" id="cars">
+      <optgroup label="Swedish Cars">
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+      </optgroup>
+      <optgroup label="German Cars">
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option><br><br>
+      </optgroup>
+    </select>
+    <br><br>
+   <!-- The multiple attribute is a boolean attribute.
+When present, it specifies that the user is allowed to enter more than one value in the <input> element.
+Note: The multiple attribute works with the following input types: email, and file.
+Tip: For <input type="file">: To select multiple files, hold down the CTRL or SHIFT key while selecting.
+Tip: For <input type="email">: Separate each email with a comma, like: mail@example.com, mail2@example.com, mail3@example.com in the email field.
+   -->
+    <select name="color" multiple="">
+        <option value="">Червено</option>
+        <option value="">Зелено</option>
+        <option value="">Синьо</option>
+        <option value="">Оранжево</option>
+        <option value="">Черно</option>
+        <option value="">Бяло</option><br><br>
+      </select>
+      <br><br>
+      <form action="/action_page.php">
+        <label for="files">Select files:</label>
+        <input type="file" id="files" name="files" multiple><br><br>
+        <input type="submit">
+      </form>
+      <br><br>
+
+      <!-- A multi-line text input control (text area): -->
+
+    <label for="w3review">Review of W3Schools:</label>
+    <textarea id="w3review" name="w3review" rows="4" cols="50">
+    At w3schools.com you will learn how to make a website. They offer free tutorials in all web development technologies.
+    </textarea>
+    <br><br>
+</body>
+</html>
